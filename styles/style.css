@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 body {
   background-color: #4c1a89;
   color: white;
   padding: 20x;
   max-width: 1200px;
   margin: 0 auto;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Lato", Times, serif;
 }
 
 header {
@@ -30,20 +32,32 @@ li {
   margin: 20px;
 }
 
-a {
-  color: white;
+header ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header ul li a:hover {
+  color: #fff063;
 }
 
 #subscribe-btn {
-  border: 2px solid #121619;
-  padding: 5px;
+  border: 2px solid #fff063;
+  padding: 8px;
+  transition: 0.3s ease-in-out;
   border-radius: 10px;
+  font-weight: 600;
+  color: #fff063;
 }
 
 #subscribe-btn:hover {
+  border: 2px solid #121619;
   background-color: #121619;
-  padding: 5px;
-  border-radius: 10px;
+  color: #fff063;
+}
+
+#subtitle {
+  font-weight: 800;
 }
 
 main {
@@ -61,7 +75,7 @@ h2 {
 }
 
 #h2 {
-  color: #121619;
+  color: #fff063;
 }
 
 main p {
@@ -77,29 +91,34 @@ aside form {
 
 input[type="text"] {
   margin-bottom: 3px;
-  height: 23px;
-  border-radius: 5px;
+  border-radius: 12px;
   border: none;
+  padding: 12px;
+  font-size: 12px;
+  font-style: italic;
 }
 
 input[type="email"] {
   margin-top: 3px;
-  height: 23px;
-  border-radius: 5px;
+  border-radius: 12px;
   border: none;
+  padding: 12px;
+  font-size: 12px;
+  font-style: italic;
 }
 
 input[type="submit"] {
   margin-top: 10px;
   padding: 15px;
   max-width: 40%;
-  background: #121619;
-  color: white;
+  background: #fff063;
+  color: #121619;
   border: 0 none;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
   font-size: 17px;
+  transition: 0.2s ease-in-out;
 }
 
 input[type="submit"]:hover {
