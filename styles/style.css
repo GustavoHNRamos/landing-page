@@ -1,0 +1,123 @@
+body {
+  background-color: #4c1a89;
+  color: white;
+  padding: 20x;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Times New Roman", Times, serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 115px;
+  height: 3px;
+  background: white;
+  margin: 6px auto 10px auto;
+}
+
+li {
+  display: inline-block;
+  margin: 20px;
+}
+
+a {
+  color: white;
+}
+
+#subscribe-btn {
+  border: 2px solid #121619;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#subscribe-btn:hover {
+  background-color: #121619;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  margin-top: 45px;
+  justify-content: space-between;
+  animation-duration: 1.5s;
+  animation-name: slidein;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 5px;
+}
+
+#h2 {
+  color: #121619;
+}
+
+main p {
+  width: 90%;
+  max-width: 500px;
+}
+
+aside form {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+}
+
+input[type="text"] {
+  margin-bottom: 3px;
+  height: 23px;
+  border-radius: 5px;
+  border: none;
+}
+
+input[type="email"] {
+  margin-top: 3px;
+  height: 23px;
+  border-radius: 5px;
+  border: none;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  padding: 15px;
+  max-width: 40%;
+  background: #121619;
+  color: white;
+  border: 0 none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+input[type="submit"]:hover {
+  border: none;
+  background: white;
+  color: #121619;
+}
+
+img {
+  width: 600px;
+  margin-top: 20px;
+}
+
+@keyframes slidein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
